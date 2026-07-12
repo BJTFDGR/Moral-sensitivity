@@ -8,8 +8,8 @@ cache in `data/`, a summary in `results/`, and the script that produced it in `s
 
 | Rebuttal claim | Summary | Per-example data | Script |
 |---|---|---|---|
-| Detoxify (offline) re-score of Table 2 outputs; ranking preserved, r=0.925 vs Perspective | [results/detoxify_rtp.md](results/detoxify_rtp.md) | [data/rtp_detoxify.json](data/rtp_detoxify.json) | scripts/t2_detoxify_rtp.py |
-| Production TOXICITY vs TOXICITY_EXPERIMENTAL (r=0.996, ρ=1.000); attribute/version/date documented | [results/perspective_doc.md](results/perspective_doc.md) | [data/rtp_perspective_prod.json](data/rtp_perspective_prod.json) | scripts/t3_perspective_prod.py |
+| Detoxify (offline) re-score of Table 2 outputs; ranking preserved, r=0.929 vs Perspective (Llama-3B) | [results/detoxify_rtp.md](results/detoxify_rtp.md) | [data/rtp_detoxify.json](data/rtp_detoxify.json) | scripts/t2_detoxify_rtp.py |
+| Production TOXICITY vs TOXICITY_EXPERIMENTAL (r=1.000, ρ=1.000, Llama-3B); attribute/version/date documented | [results/perspective_doc.md](results/perspective_doc.md) | [data/rtp_perspective_prod.json](data/rtp_perspective_prod.json) | scripts/t3_perspective_prod.py |
 | Multi-judge re-scoring: GPT-4.1, Gemini-2.5-flash, Qwen3-14B, phi-4 / Mistral-24B; κ and ranking preservation | [results/final_judges.md](results/final_judges.md) (also [rejudge_bbq.md](results/rejudge_bbq.md), [rejudge_jailbreak.md](results/rejudge_jailbreak.md)) | data/rejudge_*.json | scripts/t5_rejudge.py, t13_api_judge.py, t14_final_judges.py |
 | Judge validation (Mistral rejected for BBQ; Gemini saturates on jailbreak) + disagreement cases | [results/final_judges.md](results/final_judges.md), [results/judge_disagreement_cases.md](results/judge_disagreement_cases.md) | data/rejudge_*.json | scripts/t15_extract_disagreements.py |
 | Qualitative error analysis: CoT bias-transfer, Light evasion / bias-intact, with real examples | [results/error_analysis.md](results/error_analysis.md) | data/manifest.json (source files) | scripts/t7_error_analysis.py |
