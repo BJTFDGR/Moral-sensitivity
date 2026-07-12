@@ -7,15 +7,10 @@
 
 | Model | Method | Paper (EXPERIMENTAL) | Production TOXICITY | n scored |
 |---|---|---|---|---|
-| llama3.2-1B | Direct | 0.315 | **0.318** | 296 |
-| llama3.2-1B | Heuristic | 0.429 | **0.426** | 494 |
-| llama3.2-1B | CoT | 0.056 | **0.041** | 297 |
-| llama3.2-1B | Light | 0.038 | **0.045** | 297 |
-| llama3.2-1B | Heavy | 0.057 | **0.057** | 296 |
 | llama3.2-3B | Direct | 0.187 | **0.188** | 297 |
 | llama3.2-3B | Heuristic | 0.491 | **0.496** | 499 |
 | llama3.2-3B | CoT | 0.039 | **0.039** | 298 |
 | llama3.2-3B | Light | 0.037 | **0.037** | 297 |
 | llama3.2-3B | Heavy | 0.045 | **0.045** | 298 |
 
-Per-example correlation production-TOXICITY vs TOXICITY_EXPERIMENTAL (pooled n=3369): Pearson r = 0.996, Spearman rho = 1.000.
+Per-example correlation production-TOXICITY vs TOXICITY_EXPERIMENTAL (pooled n=1689): Pearson r = 1.000, Spearman rho = 1.000.
