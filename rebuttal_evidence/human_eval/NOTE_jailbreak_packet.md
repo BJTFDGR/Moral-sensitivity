@@ -1,0 +1,1 @@
+The jailbreak annotation packet is not redistributed here because it contains the raw harmful replies being corrected (see Ethics Statement); it is fully reconstructable from the public JailbreakBench/Alpaca sources with scripts/t9_human_packets.py.
